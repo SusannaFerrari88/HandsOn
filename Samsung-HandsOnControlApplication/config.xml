@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/TestMultiPageApplication" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="LDh2TUJYhZ.TestMultiPageApplication" package="LDh2TUJYhZ" required_version="2.3"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <name>HelloWorld</name>
+    <tizen:profile name="tv-samsung-public"/>
+</widget>
