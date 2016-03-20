@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.carcontrol.MainActivity" 
+    android:background="@drawable/background" >
+
+    <Button
+        android:id="@+id/buttonControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Control Mode" />
+
+    <TextView
+        android:id="@+id/textViewControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonControl"
+        android:layout_alignBottom="@+id/buttonControl"
+        android:layout_alignRight="@+id/buttonRight"
+        android:text="Button Control"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextIP"
+        android:layout_alignBottom="@+id/editTextIP"
+        android:layout_alignParentRight="true"
+        android:digits="0123456789."
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="3333" />
+
+    <EditText
+        android:id="@+id/editTextIP"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonControl"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/buttonRight"
+        android:digits="0123456789."
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="10.100.105.83" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextIP"
+        android:layout_alignBottom="@+id/editTextIP"
+        android:layout_alignParentLeft="true"
+        android:text="Adr:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextIP"
+        android:layout_marginTop="26dp"
+        android:text="Acc"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonForward"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/buttonRear"
+        android:layout_alignLeft="@+id/buttonRear"
+        android:layout_marginBottom="20dp"
+        android:text="Forward" />
+
+    <Button
+        android:id="@+id/buttonRear"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Rear" />
+
+    <Button
+        android:id="@+id/buttonRight"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/buttonLeft"
+        android:layout_alignBottom="@+id/buttonLeft"
+        android:layout_alignParentRight="true"
+        android:text="Right" />
+
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/buttonForward"
+        android:layout_marginTop="59dp"
+        android:text="Left" />
+
+</RelativeLayout>

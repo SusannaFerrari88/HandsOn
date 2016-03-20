@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\erhan\\AndroidStudioProjects\\CarControl(Android)\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\background.png",
+        "source": "C:\\Users\\erhan\\AndroidStudioProjects\\CarControl(Android)\\app\\src\\main\\res\\drawable-hdpi\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\erhan\\AndroidStudioProjects\\CarControl(Android)\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\erhan\\AndroidStudioProjects\\CarControl(Android)\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    }
+]
